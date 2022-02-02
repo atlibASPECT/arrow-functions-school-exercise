@@ -43,6 +43,13 @@ shortestness = str => {
     shortestness("Willynilly")
 
 // Excersize 4
+let alerts2 = ["Hey, you are awesome", "You are so wonderful", "What a marvel you are", "You're so lovely", "You're so sweet that I'd think you're a sweet potato -- and I LOOOOVE POTATOES"]
+
+showAlertTwo = navn => console.log(alerts2[(Math.floor(Math.random()*alerts2.length))] + `, ${navn}!`)
+
+showAlertTwo("You ball of fluff")
+
+// The normal function underneeth
 let alerts = ["Hey, you are awesome", "You are so wonderful", "What a marvel you are", "You're so lovely", "You're so sweet that I'd think you're a sweet potato -- and I LOOOOVE POTATOES"]
 
 function showAlert(name){
@@ -50,10 +57,3 @@ function showAlert(name){
 }
 
 showAlert("you ball of fluff")
-
-// The arrow function underneeth
-let alerts = ["Hey, you are awesome", "You are so wonderful", "What a marvel you are", "You're so lovely", "You're so sweet that I'd think you're a sweet potato -- and I LOOOOVE POTATOES"]
-
-showAlert =name => alert(alerts[(Math.floor(Math.random()*alerts.length))] + `, ${name}!`)
-
-showAlert("You ball of fluff")
